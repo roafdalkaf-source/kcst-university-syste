@@ -1,7 +1,9 @@
-mport type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { LoginForm } from './LoginForm';
 import { GraduationCap } from 'lucide-react';
+
 export const metadata: Metadata = { title: 'تسجيل الدخول' };
+
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex">
@@ -13,7 +15,7 @@ export default function LoginPage() {
             <GraduationCap className="w-10 h-10 text-accent-400"/>
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-white leading-snug">كلية النخيل<br/><span className="text-accent-400">للعلوم والتكنولوجيا</span></h1>
+            <h1 className="text-3xl font-bold text-white leading-snug">كلية النخيل</h1>
             <p className="text-white/50 text-sm mt-3">منصة إدارة متكاملة للعمليات الأكاديمية والإدارية</p>
           </div>
           <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
@@ -32,7 +34,7 @@ export default function LoginPage() {
             <div className="w-9 h-9 rounded-xl bg-primary-50 flex items-center justify-center">
               <GraduationCap className="w-5 h-5 text-primary-500"/>
             </div>
-            <p className="font-bold text-gray-800 text-sm">كلية النخيل للعلوم والتكنولوجيا</p>
+            <p className="font-bold text-gray-800 text-sm">كلية النخيل</p>
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-1">مرحباً بعودتك</h2>
           <p className="text-gray-500 text-sm mb-8">ادخل بياناتك للوصول إلى منصة الكلية</p>
@@ -41,3 +43,4 @@ export default function LoginPage() {
       </div>
     </div>
   );
+}
